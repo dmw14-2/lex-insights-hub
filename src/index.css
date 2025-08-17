@@ -124,3 +124,30 @@
     }
   }
 }
+
+@layer components {
+  /* Interactive Animation Classes */
+  .story-link {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+  
+  .hover-scale {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-card;
+  }
+  
+  .fade-in-up {
+    @apply animate-slide-up;
+  }
+  
+  .legal-hover {
+    @apply transition-all duration-300 hover:text-law-navy-light hover:scale-105;
+  }
+  
+  .smooth-entry {
+    animation: fade-in 0.6s ease-out, slide-up 0.6s ease-out;
+  }
+}

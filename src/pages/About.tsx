@@ -2,10 +2,10 @@ import { SEO } from "@/components/SEO";
 
 export function About() {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto animate-fade-in">
       <SEO title="About – Kush Sharma" />
       
-      <header className="mb-12">
+      <header className="mb-12 animate-slide-up">
         <h1 className="font-serif text-4xl md:text-5xl text-law-navy mb-6">About</h1>
         <div className="prose prose-lg max-w-none">
           <p className="text-lg leading-relaxed">
@@ -20,22 +20,22 @@ export function About() {
         </div>
       </header>
 
-      <section className="mb-12">
+      <section className="mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
         <h2 className="font-serif text-3xl text-law-navy mb-6">Academic Focus</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="p-6 rounded-lg border shadow-card bg-card">
+          <div className="p-6 rounded-lg border shadow-card bg-card hover-lift animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <h3 className="font-serif text-xl text-law-navy mb-3">Intellectual Property</h3>
             <p className="text-academic-gray">
               Copyright, patents, trademarks, and emerging IP issues in technology and AI.
             </p>
           </div>
-          <div className="p-6 rounded-lg border shadow-card bg-card">
+          <div className="p-6 rounded-lg border shadow-card bg-card hover-lift animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <h3 className="font-serif text-xl text-law-navy mb-3">Banking & Finance</h3>
             <p className="text-academic-gray">
               Regulatory compliance, debt markets, fintech regulations, and cross-border finance.
             </p>
           </div>
-          <div className="p-6 rounded-lg border shadow-card bg-card">
+          <div className="p-6 rounded-lg border shadow-card bg-card hover-lift animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <h3 className="font-serif text-xl text-law-navy mb-3">IBC/Resolution</h3>
             <p className="text-academic-gray">
               Insolvency law, corporate restructuring, and resolution processes under IBC 2016.

@@ -30,7 +30,7 @@ export function ArticlesIndex({ topicKey, query }: ArticlesIndexProps) {
   const topic = topicKey ? TOPICS.find(t => t.key === topicKey) : null;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 animate-fade-in">
       <div>
         <h1 className="font-serif text-4xl text-law-navy mb-4">
           {topic ? topic.label : "All Articles"}
@@ -48,8 +48,10 @@ export function ArticlesIndex({ topicKey, query }: ArticlesIndexProps) {
         </div>
       ) : (
         <div className="grid md:grid-cols-2 gap-6">
-          {articles.map(article => (
-            <ArticleCard key={article.slug} article={article} />
+          {articles.map((article, index) => (
+            <div key={article.slug} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <ArticleCard article={article} />
+            </div>
           ))}
         </div>
       )}

@@ -13,7 +13,7 @@ export function ArticleCard({ article, compact = false }: ArticleCardProps) {
   return (
     <a 
       href={`#/article/${article.slug}`} 
-      className="block p-6 rounded-lg border hover:shadow-card bg-card transition-all duration-200 hover:border-accent group"
+      className="block p-6 rounded-lg border hover:shadow-card bg-card transition-all duration-300 hover:border-accent hover:-translate-y-1 group animate-fade-in hover-lift"
     >
       <div className="flex items-center gap-3 text-xs text-academic-gray mb-3">
         <span className="uppercase tracking-wide font-medium text-law-navy">

@@ -54,7 +54,7 @@ export function ArticleView({ slug }: ArticleViewProps) {
   };
 
   return (
-    <article className="max-w-4xl mx-auto">
+    <article className="max-w-4xl mx-auto animate-fade-in">
       <SEO 
         title={`${article.title} – Kush Sharma`}
         description={article.excerpt}

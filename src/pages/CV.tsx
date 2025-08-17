@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 export function CV() {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto animate-fade-in">
       <SEO title="CV – Kush Sharma" />
       
-      <header className="mb-12">
+      <header className="mb-12 animate-slide-up">
         <h1 className="font-serif text-4xl md:text-5xl text-law-navy mb-6">CV / Resume</h1>
         <p className="text-lg text-academic-gray mb-6">
           Download a PDF copy of my latest CV. This page can auto-update from 
