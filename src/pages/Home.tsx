@@ -58,7 +58,7 @@ export function Home() {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-          {SAMPLE_CASES.map((caseNote, i) => (
+          {SAMPLE_CASES.filter(caseNote => caseNote.topic === 'ip').map((caseNote, i) => (
             <div 
               key={i} 
               className="p-6 rounded-lg border bg-card shadow-card hover-lift animate-fade-in transition-all duration-300"
